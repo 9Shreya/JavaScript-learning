@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var size=prompt("Enter the size")
+        var ar=new Array(size)
+        for(let i=0;i<size;i++)
+        {
+        ar[i]=Number(prompt("enter data"))
+        }
+        var midd
+    
+          if (size%2==0)
+          {
+            midd=(ar[size/2]+ar[(size/2)-1])/2
+            console.log(ar);
+            
+           console.log(midd)
+          }
+          else
+          {
+              console.log(ar);
+              
+          console.log(ar[Math.floor(size/2)])
+          }
+     
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

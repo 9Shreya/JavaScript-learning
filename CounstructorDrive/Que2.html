@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     var cric=function(fn,ln,dob)
+{
+this.fn=fn
+this.ln=ln
+this.dob=dob
+this.age=function()
+{
+ var age=new Date().getFullYear()-this.dob
+ return age
+}
+}
+cric.prototype.country="INDIA"
+cric.prototype.job="Cricketer"
+var v=new cric("virat","kohli",1988)
+var s=new cric("Sachin","tendulkar",1973)
+console.log(v.age());
+console.log(s.age());
+
+
+
+for(let a in s)
+{
+ console.log(a+" : "+ s[a]);
+ 
+}
+for(let a in s)
+{
+    var d=s.hasOwnProperty(a)
+    if(d)
+    {
+        console.log(a +" : "+s[a]+" this is own property");
+        
+    }
+    
+}
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

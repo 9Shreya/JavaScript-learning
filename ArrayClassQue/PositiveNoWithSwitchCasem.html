@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s = prompt('enter size ')
+        var a = new Array()
+        for (let i = 0; i < s; i++) {
+            a[i] = prompt('enter data')
+        }
+        console.log(a)
+        var key = prompt('Enter u want positvi no or neg no or zero'
+            + ' 1-give count of positive no'
+
+            + ' 0 -give count of zeros  '
+            + ' -1  give count of negative')
+        switch (key) {
+            case '1':
+                {
+                    var count = 0
+                    a.forEach(Element => {
+                        if (Element > 0) {
+                            count++
+                        }
+                    })
+                    console.log(" the positive no are " + count)
+                    break
+                }
+            case '-1':
+                {
+                    let count = 0
+                    a.forEach(Element => {
+                        if (Element < 0) {
+                            count++
+                        }
+                    })
+                    console.log(" the negative no are " + count)
+                    break
+                }
+            case '0':
+                {
+                    let count = 0
+                    a.forEach(Element => {
+                        if (Element == 0) {
+                            count++
+                        }
+                    })
+                    console.log(" the zero no are " + count)
+                    break
+                }
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

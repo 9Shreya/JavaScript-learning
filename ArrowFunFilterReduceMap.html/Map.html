@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//without map method
+
+var a = [1,2,5,4,8,7,12,5,4,88,96]
+        var b=new Array()
+        var c=new Array()
+        for (let i = 0; i < a.length; i++) {
+           b[i]=a[i]*5
+            c.push(a[i]*5)
+        }
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        
+
+
+
+
+
+//with map method
+console.log("with map method");
+
+var f=a.map(Element=>Element*5)
+console.log(f);
+
+
+
+
+    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

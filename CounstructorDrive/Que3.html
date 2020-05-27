@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function intervie(job)
+{
+if(job=="developer")
+{
+     return function(name)
+     {
+         console.log(`${name} is a ${job}`)
+     } 
+}
+else if(job=="photoghrapher")
+{
+    return function(name)
+     {
+         console.log(`${name} is a${job}`)
+     }
+}
+else if(job=="designer")
+{
+    return function(name)
+     {
+         console.log(`${name} is a${job}`)
+     }
+}
+}
+
+var fresher=intervie("developer")
+fresher("shreya")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

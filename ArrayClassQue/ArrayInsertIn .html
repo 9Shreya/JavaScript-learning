@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var s=prompt('enter size')
+var ar=new Array(s)
+for (let i=0;i<s;i++){
+    ar[i]=prompt('enter data')
+}console.log(ar)
+var key =prompt('enter which fun u want to perform 1,-1,0')
+switch(key){
+    case '1':{
+        var ar2=new Array()
+        for(let i=0;i<s;i++){
+            if(ar[i]>0){
+                ar2.push(ar[i])
+            }
+        }console.log(ar2)
+
+    }
+    break
+    case '-1':{var ar3=new Array()
+        for(let i=0;i<s;i++){
+            if(ar[i]<0){
+                ar3.push(ar[i])
+            }
+        }console.log(ar3)}
+break
+    
+    case '0':{var ar4=new Array()
+        for(let i=0;i<s;i++){
+            if(ar[i=0]){
+                ar4.push(ar[i])
+            }
+        }console.log(ar4)
+
+    }
+}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

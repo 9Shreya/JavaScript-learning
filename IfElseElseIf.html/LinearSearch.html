@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var size =prompt("enter the size")
+        var ar=new Array(size)
+        for (let index = 0; index < size; index++) {
+        ar[index]=prompt("enter data")   
+        }
+        
+   var k= Number(prompt("enter key value want to search"))
+   var at=function()
+    {
+        for(let i=0;i<size;i++)
+       {
+           if(ar[i]==k)
+           {
+               return "key found"   
+           }
+       }
+       return "key not found"
+   }
+   console.log(at());
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

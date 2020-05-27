@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function add(a,b,c)
+    {
+var result =parseInt (a)+parseInt(b)+parseInt(c)
+alert('addition is '+result)
+    } 
+    function mul(a,b,c){
+        var result =a*b*c
+alert('multiplication  is '+result)
+    }
+    
+    </script>
+</head>
+<body>
+    u want to perform addition  <br>
+    <input type="text" id="op1"><br>
+    <input type="text" id="op2"><br>
+    <input type="text" id="op3"> <br>
+    <input type="submit" value="add" onclick="add(op1.value,op2.value,op3.value)"><br>
+
+    u want to perform multiplication  <br> 
+    <input type="text" id="opp1"><br>
+    <input type="text" id="opp2"><br>
+    <input type="text" id="opp3"><br>
+    <input type="submit" value="mul" onclick="mul(opp1.value,opp2.value,opp3.value)">
+</body>
+</html>

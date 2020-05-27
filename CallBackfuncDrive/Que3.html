@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function display(e,o)
+{
+e()
+o()
+}
+var s=prompt('enter size')
+var ar=new Array(s)
+for(let i=0;i<s;i++)
+{
+    ar[i]=prompt('enter data')
+}
+console.log(ar);
+function even()
+{
+    console.log(ar.filter(ele=>ele%2==0))
+}
+function odd(){
+  console.log(ar.filter(ele=>ele%2!=0))
+}
+display(even,odd)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

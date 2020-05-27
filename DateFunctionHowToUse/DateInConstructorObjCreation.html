@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var Cric=function(firstNm,lastNm,dob){
+this.firstNm=firstNm
+this.lastNm=lastNm
+this.dob=dob
+this.age=function(d){
+    console.log("age");
+    
+    console.log(new Date().getFullYear()-d) 
+}
+}
+console.log(Cric);
+
+var s=new Cric("Scahin","tendulka",1973,)
+console.log(s.firstNm);
+console.log(s);
+console.log(s.age(1973));
+
+s.age(1973)
+var v=Cric("virat","kohli",1988)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

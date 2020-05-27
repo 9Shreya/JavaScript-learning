@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = [1, 2, 5, 4, 8, 7, 12, 5, 4, 88, 96]
+        var b = 0;
+        for (let i = 0; i < a.length; i++) {
+            b = b + a[i]
+        }
+        console.log(a);
+        console.log(b);
+
+
+
+        //with reduce method
+        console.log("with reduce method");
+
+        var f = a.reduce((op1, op2) => op1 + op2)
+        console.log(f);
+
+
+        //with map
+        console.log("with map")
+        var f = a.map(Element => Element * 2)
+        console.log(f);
+
+
+        //with filter
+        console.log("with filter");
+        var f = a.filter(Element => Element % 2 == 0)
+        console.log(f);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

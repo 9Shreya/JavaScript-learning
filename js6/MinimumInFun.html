@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s = prompt("Enter the size of array")
+        var ar = new Array(s)
+
+        var arr = function ()
+         {
+            for (let i = 0; i < s; i++) 
+            {
+                ar[i] = prompt("enter data")
+            }
+            var b = ar[0]
+
+            for (let i = 0; i < s; i++)
+             {
+                if (b > ar[i])
+                 {
+                    b = ar[i]
+                }
+            }
+            console.log(Math.min.apply(0,ar));
+            console.log(Math.min(...ar));
+            
+            
+            console.log(b)
+            console.log(ar)
+        }
+        console.log(arr())
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

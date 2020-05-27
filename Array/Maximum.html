@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s=prompt('enter size')
+        var ar=new Array(s)
+        
+        for(let i=0;i<s;i++){
+            ar[i]=prompt('enter the value')
+    }
+    console.log(ar)
+    var b=ar[0]
+    for (let index = 0; index < ar.length; index++) {
+        if(b<ar[index]){
+            
+            b=ar[index]
+        }
+    }
+        console.log(Math.max(...ar));
+        
+        console.log(b)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var s=prompt('enter size')
+var ar=new Array(s)
+for(let i=0;i<s;i++)
+{
+    ar[i]=prompt('enter data')
+}
+console.log(ar);
+
+var d=[]
+var t=[]
+for(let i of ar)
+{
+    if(i%2==0)
+    {
+     d.push(i*10)
+    }
+    if(i%2!=0)
+    {
+        t.push(i*5)
+    }
+}
+console.log(d);
+console.log(t);
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

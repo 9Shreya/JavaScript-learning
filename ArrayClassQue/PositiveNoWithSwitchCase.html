@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var s=prompt('enter size ')
+var a=new Array() 
+for(let i=0;i<s;i++)
+{
+a[i]=prompt('enter data')
+}
+console.log(a)
+
+function postiveTotal()
+{
+    var count=0
+    for(let i=0;i<s;i++){
+     if(a[i]>0){
+         count++
+     }
+    }console.log(" the positive no are "+count)
+    
+}
+
+function negativeTotal()
+{
+    var countt=0
+    for(let i=0;i<s;i++){
+     if(a[i]<0){
+         countt++
+     }
+    }console.log(" the negative no are "+countt)
+    
+}
+function zeroTotal()
+{
+    var counnt=0
+    for(let i=0;i<s;i++){
+     if(a[i]==0){
+         counnt++
+     }
+    }console.log(" the zero no are "+counnt)
+    
+}
+    </script>
+</head>
+<body>
+    <input type="submit" value="positive" onclick="postiveTotal()">
+    <input type="submit" value="negative" onclick="negativeTotal()">
+    <input type="submit" value="zero" onclick="zeroTotal()">
+</body>
+</html>

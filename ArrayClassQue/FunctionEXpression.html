@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var Save = function (name, job) {
+            switch (job) {
+                case 'photographer': {
+                    console.log(name + ' is a ' + job)
+                }
+                    break
+                case 'Fullstack': {
+                    console.log(name + ' is a ' + job)
+                }
+                    break
+                default: {
+                    console.log(name + ' does some other work ')
+                }
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    Full name <input type="text" id="op1"><br>
+    job <input type="text" name="" id="op2"><br>
+    <input type="submit" value="swtich" onclick="Save(op1.value,op2.value)">
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s=prompt('entre the size')
+        var ar=new Array(s)
+        var b=0
+        for(let i=0;i<s;i++){
+            ar[i]=prompt('enter value')
+        }
+        for(let i=0;i<s;i++){
+            if(b<ar[i]){
+              b=ar[i]
+   }
+        }
+           
+           var largest = Math.max.apply(0, ar);
+           console.log(largest) 
+           console.log(b);
+           
+           
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

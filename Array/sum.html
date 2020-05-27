@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s=prompt('entre the size')
+        var ar =new Array(s)
+        var sum=0
+        for(let i=0;i<s;i++){
+            ar[i]=parseInt(prompt('enter value'))
+        sum=sum+ar[i]
+
+        }
+        console.log(ar.reduce((ele1,ele2)=>ele1+ele2));
+        
+        console.log(ar)
+        console.log(sum)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

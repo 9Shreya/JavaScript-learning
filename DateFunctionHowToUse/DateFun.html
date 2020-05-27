@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var d=new Date()
+console.log(d.getDate())
+
+console.log(d.getFullYear());
+console.log(d.getHours());
+
+console.log(d.getSeconds());
+console.log(d.getMilliseconds());
+console.log(new Date());
+var ar=['sud','mon','tue','wed','thru','fri','sat']
+var arr=['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+var day=d.getDay()
+
+var month=d.getMonth()
+for(let i=0;i<arr.length;i++){
+    if(month==[i]){
+        console.log(month);
+        
+console.log('current month is '+arr[i])
+    }
+}
+for(let i=0;i<=ar.length;i++){
+    if(day==[i])
+    {    
+console.log('current day is '+ar[i])
+    }
+}
+
+var day=d.getDay()
+var month=d.getMonth()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

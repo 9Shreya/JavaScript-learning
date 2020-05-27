@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var s=new Object()
+    s.name='sachin'
+    s.roll=30
+    s.country='India'
+console.log(s);
+var count=0
+for(let i in s)
+{
+count++
+}
+console.log(count);
+
+delete s.name
+console.log(s);
+
+var count=0
+for(let i in s)
+{
+count++
+}
+console.log(count);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

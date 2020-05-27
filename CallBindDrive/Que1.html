@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var sc=
+{
+first:"Sachin",
+last:"Tendulkar",
+dob:1973,
+display:function (country)
+{
+    if(country==="India")
+    {
+        console.log(`belongs to India ${this.first} ${this.last} ${dob}`);
+        
+    }
+    else if(country==="Pakistan")
+    {
+        console.log(` ${this.first} ${this.last} ${this.dob} belongs to pakistan`);
+        
+    }
+
+} 
+}
+var afridi={
+    first:"Shahid",
+    last:"Afridi",
+    dob:1975
+}
+var a=sc.display.call(afridi,"Pakistan")
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

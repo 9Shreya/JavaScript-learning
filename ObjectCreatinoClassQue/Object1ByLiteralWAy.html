@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var Cric={
+    forstName : "Shreya",
+    LastNmae : "Agrawal",
+    dob: 2020 ,//if we use / it will give divsion of value
+    isMarried:false,
+    10:"hi",
+    age:function(){
+        console.log("Calaculating-age");
+        return 2020-1973
+        
+    }
+
+}
+console.log(Cric);
+console.log(`when itarable obj is taken it shows length at starting and at proto type also shows (0)`);
+
+
+var ar=[10,20,30,40]
+console.log(ar);
+console.log(Cric.LastNmae);
+console.log(typeof(Cric.dob));  //values can be interger char string 
+console.log(Cric["forstName"]);
+Cric.dob=2000         //changed the data
+Cric["dob"]=1555
+
+console.log(Cric);
+console.log("10");      //we have to call as string only key are always in string format
+console.log(delete Cric["dob"])//deleting
+console.log(delete Cric.dob);
+console.log(Cric)
+console.log(Cric.age)
+console.log(Cric.age());
+for(let i in Cric){
+    console.log(i); 
+}
+for(let i in Cric){ 
+    console.log(Cric[i])
+}
+for(let i in Cric){
+    console.log(`${i} : ${Cric[i]}`);
+}
+for(let i in Cric){
+    console.log(`${i} : ${Cric.i}`);   ///why is it showing undefined   
+}
+console.log('fetching data')
+var count=0;
+for(let i in Cric){
+count++
+}
+console.log(count)
+
+
+
+
+console.log(typeOf(Cric));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
